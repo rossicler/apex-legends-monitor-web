@@ -1,19 +1,12 @@
-import type { NextPage } from "next";
-import { useEffect } from "react";
 import Head from "next/head";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Navbar from "../components/Navbar/Navbar";
+import PlayerSearch from "../components/PlayerSearch/PlayerSearch";
+import SearchInput from "../components/SearchInput/SearchInput";
 
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar/Navbar";
 
-const Home: NextPage = () => {
-  // useEffect(() => {
-  //   const serverStatusUrl = `https://api.mozambiquehe.re/servers?auth=${API_KEY}`;
-  //   axios.get(serverStatusUrl).then((res) => {
-  //     console.log(res);
-  //   });
-  // }, []);
-
+const PlayerStatistics = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,7 +17,8 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Navbar />
-        <h1 className={styles.title}>Welcome to Apex Legends!</h1>
+        <h1 className={styles.title}>Search for user here</h1>
+        <PlayerSearch />
       </main>
 
       <footer className={styles.footer}>Powered by Goys.com</footer>
@@ -32,4 +26,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default PlayerStatistics;
