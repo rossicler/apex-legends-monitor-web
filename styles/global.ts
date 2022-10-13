@@ -4,6 +4,6 @@ export default createGlobalStyle`
   body {
     background: #E5E1D8;
     color: #fff;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 `
