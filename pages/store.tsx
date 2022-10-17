@@ -1,11 +1,19 @@
 import CharBanner from "../components/CharBanner";
+import DivBox from "../components/divBox";
 import Navbar from "../components/Navbar";
+import PageTitle from "../components/PageTitle";
+import Wrapper from "../components/Wrapper";
 
 function Store() {
   return( 
     <>
       <Navbar/>
-      <CharBanner/>
+      <Wrapper>
+        <DivBox>
+          <PageTitle title="Store Rotation"></PageTitle>
+        </DivBox>
+        <CharBanner/>
+      </Wrapper>
     </>
 )}
 
