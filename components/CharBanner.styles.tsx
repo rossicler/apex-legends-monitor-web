@@ -4,12 +4,11 @@ export const Container = styled.div`
   position: relative;
   margin: 0 0 0 auto;
   width: 30%;
-  height: 100vh;
+  height: 100% !important;
 `;
 
 export const Banner = styled.div`
     height: 100%;
-    max-height: 100vh;
     width: 80%;
     margin: 0 auto 0 0;
     background-color: ${props => props.theme.secondaryColor};
@@ -17,7 +16,6 @@ export const Banner = styled.div`
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    position: relative;
     border-style: double;
     border-width: 20px;
     border-color: ${props => props.theme.secondaryDarkColor};
@@ -25,7 +23,7 @@ export const Banner = styled.div`
 `
 
 export const Char = styled.div`
-    height: 100vh;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
