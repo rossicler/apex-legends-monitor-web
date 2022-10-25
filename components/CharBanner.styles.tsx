@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface Props {
+  charUrl: string;
+}
+
 export const Container = styled.div`
   position: relative;
   margin: 0 0 0 auto;
@@ -22,12 +26,12 @@ export const Banner = styled.div`
 
 `
 
-export const Char = styled.div`
+export const Char = styled.div<Props>`
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("/assets/Loba2.png");
+    background-image: url(${props => props.charUrl});
     background-repeat: no-repeat;
     position: absolute;
     background-size: 100%;

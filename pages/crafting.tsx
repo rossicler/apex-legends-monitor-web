@@ -8,18 +8,24 @@ import { useEffect } from "react";
 
 const API_KEY = "47aca678a38ce417df5a2be5f2fc98a6";
 
-
-function Store() {
+function Crafting() {
+  useEffect(() => {
+    const craftRotationUrl = `https://api.mozambiquehe.re/crafting?auth=${API_KEY}`;
+    axios.get(craftRotationUrl).then((res) => {
+      console.log(res);
+    });
+  }, []);
   return( 
     <>
       <Navbar/>
       <Wrapper>
         <DivBox>
-          <PageTitle title="Store Rotation"></PageTitle>
+          <PageTitle title="Crafting Rotation"></PageTitle>
+          <h1>testeteste</h1>
         </DivBox>
-        <CharBanner charUrl="/assets/Loba2.png"/>
+        <CharBanner charUrl="/assets/rampart.png"/>
       </Wrapper>
     </>
 )}
 
-export default Store
+export default Crafting

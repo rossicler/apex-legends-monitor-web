@@ -3,7 +3,7 @@ import React from "react";
 // components
 import { Container, Title, LogoImg } from "./PageTitle.styles";
 
-type Props ={
+type Props = {
   title: string;
 }
 
