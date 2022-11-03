@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+  @font-face {
+    font-family: 'Apex';
+    src: url('/assets/Apex-Regular.otf');
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -12,7 +17,10 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     background: #E5E1D8;
+    background-image: url('/assets/background-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Apex', sans-serif;
   }
 `

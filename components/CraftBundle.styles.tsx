@@ -13,10 +13,11 @@ export const Container = styled.div<Props>`
   border: solid;
   border-width: 5px;
   border-color: ${props => props.borderColor};
+  border-radius: ${props => props.theme.borderRadius};
   background-image: url(${props => props.img});
   background-repeat: no-repeat;
   background-size: 70px;
   background-position: center;
-  margin-left: 10px;
+  margin-left: 5px;
 
 `
