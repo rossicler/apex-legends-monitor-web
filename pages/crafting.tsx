@@ -17,7 +17,6 @@ function Crafting() {
 
   const fetchData = async () => {
     const { data } = await axios.get(craftRotationUrl)
-    console.log('data', data)
     setData(data)
   }
   
@@ -60,10 +59,6 @@ function Crafting() {
       objs: permanent ,
     },
   ]
-
-  console.log('daily', daily)
-  console.log('week', weekly)
-  console.log('perm', permanent)
 
   return( 
     <>

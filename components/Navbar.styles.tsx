@@ -8,10 +8,9 @@ export const Container = styled.div`
   justify-content: space-between;
   width: 100%;
   padding: 0px 80px;
-  /* position: absolute; */
   top: 0;
   left: 0;
-  height: 60px;
+  height: 10vh;
 `;
 
 export const NavList = styled.div`
@@ -20,7 +19,9 @@ export const NavList = styled.div`
   gap: 40px;
 `;
 
-export const NavItem = styled.span`
+export const NavItem = styled.a`
   padding: 0px 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
 `;
